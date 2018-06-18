@@ -1,0 +1,14 @@
+{
+  "name": "Llama_proto",
+  "version": "1.0.0",
+  "description": "SASS for Travel",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Chen",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
