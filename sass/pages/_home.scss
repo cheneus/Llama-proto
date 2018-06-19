@@ -21,5 +21,8 @@
 
 .section-tour {
     background-color: $color-grey-light-1;
-    padding:20rem 1rem 40rem 1rem;
+}
+
+.section-story {
+    background-image: linear-gradient( to bottom, rgba($color-white, 0.8), rgba($banner-color-primary, 0.8)), url(../img/nat-5.jpg);
 }

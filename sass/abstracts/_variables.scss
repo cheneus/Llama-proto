@@ -1,14 +1,11 @@
 $color-primary: #7ed56f;
 $color-primary-light: #55c57a;
-$banner-color-primary: #43cea2;
-$banner-color-secondary: #185a9d;
 
 $color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
 
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
-
 
 $color-primary-dark: #28b485;
 
@@ -21,6 +18,13 @@ $color-grey-dark-3: #333;
 
 $color-white: #fff;
 $color-black: #000;
+
+$banner-color-primary: #43cea2;
+$banner-color-secondary: #185a9d;
+// gradient
+$color-gradient-default: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+$color-gradient-secondary: linear-gradient(to right, $color-secondary-light, $color-secondary-dark);
+$color-gradient-tertiary: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
 
 // grid
 $grid-width: 114rem;
