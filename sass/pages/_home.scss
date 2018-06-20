@@ -29,9 +29,27 @@
     background-color: $color-grey-light-1;
     background-size: cover;
     position: relative;
+}
 
-    transform: skewY(-6deg);
-    & > * {
-        transform: skewY(6deg);
+.section-booking {
+    background-color: $color-grey-light-1;
+    background-size: cover;
+    
+}
+
+.booking {
+    background-image: linear-gradient(100deg, 
+    rgba($color-white, .8) 0%, 
+    rgba($color-white, .8) 50%, 
+    rgba($color-black, 0)50%), 
+    url(../img/nat-10.jpg) ;
+    background: size 100%;
+    border-radius: 3px;
+    box-shadow: $box-shadow-small-heavy;
+    height: 50rem;
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
     }
 }
