@@ -93,22 +93,22 @@ body {
   text-align: center; }
 
 .u-margin-bottom-xbig {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
 
 .u-margin-bottom-big {
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem !important; }
 
 .u-margin-bottom-med {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem !important; }
 
 .u-margin-top-big {
-  margin-top: 6rem; }
+  margin-top: 6rem !important; }
 
 .u-margin-top-xbig {
-  margin-top: 8rem; }
+  margin-top: 8rem !important; }
 
 .bg-video {
   position: absolute;
@@ -124,7 +124,7 @@ body {
     height: 100%;
     width: 100%; }
 
-.btn:link,
+.btn, .btn:link,
 .btn :visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -133,7 +133,9 @@ body {
   border-radius: 10rem;
   transition: all .2s;
   position: relative;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  border: 0;
+  cursor: pointer; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -142,9 +144,10 @@ body {
     transform: scaleX(1.2) scaleY(1.5);
     opacity: 0; }
 
-.btn:active {
+.btn:active, .btn:focus {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  outline: none; }
 
 .btn::after {
   content: "";
@@ -329,7 +332,7 @@ body {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.8); }
 
 .form__group:not(:last-child) {
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
 
 .form__input {
   font-size: 1.6em;
@@ -348,14 +351,37 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     border-bottom: 3px solid #7ed56f; }
   .form__input:focus:invalid {
-    border-bottom: 3px solid #ff7730; }
+    border-bottom: 3px solid #ff0000; }
 
 .form__label {
   font-size: 1.2rem;
   font-weight: 700;
   margin-left: 2rem;
   display: block;
-  margin-top: .7rem; }
+  margin-top: .7rem;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
+.form__radio-group {
+  display: block;
+  margin-bottom: 1rem; }
+
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4em; }
+
+.form__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute; }
 
 .story {
   width: 75%;
