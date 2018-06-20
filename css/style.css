@@ -110,6 +110,20 @@ body {
 .u-margin-top-xbig {
   margin-top: 8rem; }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  overflow: hidden; }
+  .bg-video__content {
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+    width: 100%; }
+
 .btn:link,
 .btn :visited {
   text-transform: uppercase;
@@ -318,7 +332,7 @@ body {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 3px;
   padding: 4em;
   padding-left: 6rem;
@@ -423,8 +437,9 @@ body {
   background-color: #f7f7f7; }
 
 .section-story {
-  background-image: linear-gradient(to bottom, #f7f7f7, rgba(67, 206, 162, 0.8)), url(../img/nat-5.jpg);
+  background-color: #f7f7f7;
   background-size: cover;
+  position: relative;
   transform: skewY(-6deg); }
   .section-story > * {
     transform: skewY(6deg); }
