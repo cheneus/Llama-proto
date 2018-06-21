@@ -1,11 +1,12 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import "variables/functions";
+@import "variables/mixins";
+@import "variables/variables";
 
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
+@import "base/grid";
 
 @import "components/bg-video";
 @import "components/button";
@@ -17,7 +18,6 @@
 @import "components/story";
 
 @import "layout/footer";
-@import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
 

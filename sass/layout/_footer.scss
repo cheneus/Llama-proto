@@ -18,12 +18,11 @@
     }
 
     &__logo {
-        height: 7.5rem
+        max-width: 30rem;
     }
 
     &__navigation {
         border-top: 1px solid $color-grey-dark;
-        padding-top: 2rem;
         display: inline-block;
 
         // @include respond(tab-port) {
@@ -37,7 +36,7 @@
     }
 
     &__item {
-        display: inline-block;
+        display: block;
 
         &:not(:last-child) {
             margin-right: 1.5rem;
@@ -63,11 +62,11 @@
         }
     }
 
-    &__copyright {
+    &__col {
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
-        width: 80%;
-        float: right;
+        // width: 80%;
+        // float: right;
 
         // @include respond(tab-port) {
         //     width: 100%;

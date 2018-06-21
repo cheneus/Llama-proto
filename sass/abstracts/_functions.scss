@@ -1,3 +1,0 @@
-@function box-shadow($x, $y, $blur, $color, $opacity) {
-    @return  $x $y $blur rgba($color, $opacity)
-}

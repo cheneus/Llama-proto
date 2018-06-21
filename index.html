@@ -14,9 +14,36 @@
 </head>
 
 <body>
+    <div class="navi">
+        <input type="checkbox" class="navi__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navi__button">
+            <span class="navi__icon">&nbsp;</span>
+        </label>
+        <div class="navi__bg">&nbsp;</div>
+        <nav class="navi__nav">
+            <ul class="navi__list">
+                <li class="navi__item">
+                    <a href="#" class="navi__link">About</a>
+                </li>
+                <li class="navi__item">
+                    <a href="#" class="navi__link">Features</a>
+                </li>
+                <li class="navi__item">
+                    <a href="#" class="navi__link">Tours</a>
+                </li>
+                <li class="navi__item">
+                    <a href="#" class="navi__link">Stories</a>
+                </li>
+                <li class="navi__item">
+                    <a href="#" class="navi__link">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
     <header class="header">
         <div class="header__logo-box">
-            <img src="./img/logoWithTitle.png" class="header__logo" alt="logo">
+            <img src="img/logoWithTitle.png" class="header__logo" alt="logo">
         </div>
         <div class="header__text-box ">
             <h1 class="heading-primary u-margin-bottom-small">
@@ -267,42 +294,42 @@
         </section>
     </main>
     <footer class="footer">
-            <div class="footer__logo-box">
-    
-                <picture class="footer__logo">
-                    <source srcset="img/logo.png 1x, img/logo.png" media="(max-width: 37.5em)">
-                    <img srcset="img/logo.png 1x, img/logo.png" alt="Full logo" src="img/logo.png">
-                </picture>
-    
-    
-    
-            </div>
-            <div class="row">
-                <div class="col-1-2">
-                    <div class="footer__navigation">
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Company</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Contact us</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Privacy policy</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Terms</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-1-2">
-                    <p class="footer__copyright">
-                       Copyright &copy; Design by Jonas Schmedtmann.  Customized by Chen Sia
-                    </p>
+
+        <div class="row">
+            <div class="col-1-3">
+                <div class="footer__col u-padding-small">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Company</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Contact us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Privacy policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Terms</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+            <div class="col-1-3">
+                <div class="footer__logo-box">
+                    <picture class="footer__logo">
+                        <source srcset="img/logo.png 1x, img/logo.png" media="(max-width: 30em)">
+                        <img srcset="img/logo.png 1x, img/logo.png" alt="Full logo" src="img/logo.png" class="footer__logo">
+                    </picture>
+                </div>
+            </div>
+            <div class="col-1-3">
+                <p class="footer__col u-padding-small">
+                    Stay Green
+                    <br> We support of all green stuff and Llamas
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
