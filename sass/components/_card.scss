@@ -61,17 +61,17 @@
         
         &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
-            url(../../img/beach-1-900.jpg);
+            url(img/beach-1-900.jpg);
         }
 
         &--2 {
             background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
-            url(../../img/forest-1-900.jpg);
+            url(img/forest-1-900.jpg);
         }
 
         &--3 {
             background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
-            url(../../img/mountain-2-1200.jpg);
+            url(img/mountain-2-1200.jpg);
         }
     }
 
