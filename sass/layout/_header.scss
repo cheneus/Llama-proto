@@ -1,6 +1,9 @@
 .header {
     height: 120vh;
-    background-image: linear-gradient( to right bottom, rgba($banner-color-tertiary, 0.8)0%, rgba($banner-color-primary, 0.8)50%, rgba($banner-color-secondary, 0.8)100%), url(img/llama-1-2k.jpg);
+    background-image: linear-gradient( to right bottom, 
+      rgba($banner-color-tertiary, 0.8)0%, 
+      rgba($banner-color-primary, 0.8)50%, rgba($banner-color-secondary, 0.8)100%),
+      url(../img/llama-1-2k.jpg);
     background-size: cover;
     background-position: top;
     /* clippy path maker */
