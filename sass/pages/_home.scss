@@ -1,7 +1,16 @@
 .section {
-    padding:20rem 1rem;
+    padding:20rem 2rem;
     margin-top: -20vh;
     margin-bottom: -5vh;
+
+    @include responsiveQ(tab-port) {
+        padding:20rem 2rem;
+        margin-bottom: 5vh;
+       }
+
+    @include responsiveQ(phone) {
+        margin-bottom: 3.5vh;
+    }
 }
 
 .section-about {

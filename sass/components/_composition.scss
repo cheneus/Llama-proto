@@ -3,24 +3,47 @@
 
     &__photo {
         width:55%;
-        box-shadow: boxShadow(0, 1.5rem, 4rem, $color-black, 0.4);
+        box-shadow: $box-shadow-photo-reg;
         border-radius:2px;
         position: absolute;
         z-index: 1;
         transition: all .2s;
         outline-offset: 2rem;
 
+        @include responsiveQ(tab-port) {
+            position: relative;
+            float:left;
+            width: 33.33%;
+            box-shadow: $box-shadow-photo-phone;
+        }
+
         &--p1 {
             left:0;
-            top:-2em;
+            top:0em;
+
+            @include responsiveQ(tab-port) {
+                top:4em;
+                left:6em;
+          }
         }
         &--p2 {
             right: 0;
-            top:4em;
+            top:2em;
+
+            @include responsiveQ(tab-port) {
+                top:8em;
+                right:1em;
+
+            }
         }
         &--p3 {
             left:20%;
             top:15em;
+
+            @include responsiveQ(tab-port) {
+                top:6em;
+                left:-6em;
+            }
         }
 
         &:hover {
