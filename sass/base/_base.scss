@@ -6,11 +6,28 @@
   box-sizing: inherit;
 }
 
+html {
+  font-size:62.5%; //change as needed 1rem=10px as oppose to 16px/1.6rem
+
+  @include responsiveQ(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include responsiveQ(tab-port) {
+    font-size: 50%;
+  }
+
+  @include responsiveQ(desktop) {
+    font-size: 75%;
+  }
+}
+
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400; // font-size: 16px;
-  line-height: 1.7;
-  color: $color-grey-dark;
   padding: 3rem;
   box-sizing: border-box;
+
+  @include responsiveQ(tab-port) {
+    padding:0rem;
+  }
 }
+
