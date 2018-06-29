@@ -33,7 +33,7 @@
         border-radius: 50%;
         top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient($color-primary-light 5%, $banner-color-secondary 22%);
+        background-image: radial-gradient($color-primary 10%, $color-primary-dark 25%);
         z-index: 10;
         transition: transform 300ms cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -90,7 +90,7 @@
         }
     }
     &__checkbox:checked~&__bg {
-        transform: scale(100);
+        transform: scale(200);
     }
     &__checkbox:checked~&__nav {
         opacity: 1;
