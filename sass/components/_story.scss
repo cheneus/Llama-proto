@@ -9,6 +9,11 @@
     font-size: $font-size-default;
     transform: skewX(-10deg);
 
+    @include responsiveQ(phone) {
+        width:100%;
+        transform: skewX(-5deg);
+    }
+
     &__shape {
         width: 15rem;
         height: 15rem;
