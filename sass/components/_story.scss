@@ -4,14 +4,20 @@
     box-shadow: $box-shadow-small;
     background-color:rgba($color-white, .7);
     border-radius: 3px;
-    padding:4em;
+    padding:4rem;
     padding-left: 6rem;
     font-size: $font-size-default;
     transform: skewX(-10deg);
 
-    @include responsiveQ(phone) {
+    @include responsiveQ(tab-port) {
         width:100%;
         transform: skewX(-5deg);
+        padding:3rem;
+        padding-left: 5rem;
+    }
+
+    @include responsiveQ(tab-port) {
+        transform: skewX(0);
     }
 
     &__shape {
@@ -24,6 +30,10 @@
         clip-path: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(10deg);
+
+        @include responsiveQ(tab-port) {
+            transform: skewX(0) translateX(-3rem);
+        }
     }
 
     &__img {
@@ -34,6 +44,14 @@
 
     &__text {
         transform: skewX(10deg);
+
+        @include responsiveQ(tab-port) {
+            transform: skewX(5deg);
+        }
+
+        @include responsiveQ(phone) {
+            transform: skewX(0deg);
+        }
     }
     &__caption {
         position: absolute;

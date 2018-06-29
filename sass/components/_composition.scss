@@ -1,5 +1,6 @@
 .composition {
     position: relative;
+    @include clearfix;
 
     &__photo {
         width:55%;
