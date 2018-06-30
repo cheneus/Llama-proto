@@ -547,7 +547,8 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9000;
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  overflow: auto; }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -557,22 +558,37 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: table;
-    overflow: hidden;
+    overflow: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media (max-width: 37.5em) {
+      .popup__content {
+        height: 75%; } }
   .popup__left {
     width: 40%;
     display: table-cell; }
+    @media (max-width: 37.5em) {
+      .popup__left {
+        width: 100%;
+        display: inline-block; } }
   .popup__right {
     width: 60.00%;
     display: table-cell;
     vertical-align: middle;
     padding: 2rem 4rem; }
+    @media (max-width: 37.5em) {
+      .popup__right {
+        width: 100%;
+        display: inline-block; } }
   .popup__img {
     display: block;
     width: 100%; }
+    @media (max-width: 37.5em) {
+      .popup__img {
+        width: 50%;
+        display: none; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -582,15 +598,23 @@ body {
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid #777;
+    overflow: scroll;
     hyphens: auto; }
+    @media (max-width: 56.25em) {
+      .popup__text {
+        overflow: scroll;
+        -moz-column-count: 1;
+        column-count: 1;
+        text-align: left; } }
   .popup__close:link, .popup__close:visited {
     color: #777;
     position: absolute;
-    right: 2rem;
-    top: 2rem;
+    right: 2.5rem;
+    top: 2.5rem;
     font-size: 3rem;
     text-decoration: none;
-    display: inline-block; }
+    display: inline-block;
+    line-height: 1px; }
   .popup__close:hover {
     color: #7ed56f; }
 
@@ -705,17 +729,17 @@ body {
         text-align: center; } }
 
 .header {
-  height: 120vh;
+  height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(215, 245, 235, 0.8) 0%, rgba(67, 206, 162, 0.8) 50%, rgba(24, 90, 157, 0.8) 100%), url(../img/llama-1-2k.jpg);
   background-size: cover;
   background-position: top;
   /* clippy path maker */
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%); }
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
   @media (max-width: 37.5em) {
     .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 115vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 115vh, 0 100%); } }
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -858,12 +882,18 @@ body {
   padding: 20rem 2rem;
   margin-top: -20vh;
   margin-bottom: -5vh; }
+  @media (max-width: 75em) {
+    .section {
+      padding: 30rem 2rem;
+      margin-top: -16vh;
+      margin-bottom: -5vh; } }
   @media (max-width: 56.25em) {
     .section {
-      padding: 20rem 2rem;
+      padding: 25rem 2rem;
       margin-bottom: 5vh; } }
   @media (max-width: 37.5em) {
     .section {
+      padding: 20rem 2rem;
       margin-bottom: 3.5vh; } }
 
 .section-about {

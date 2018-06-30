@@ -8,11 +8,14 @@
     z-index: 9000;
     opacity: 0;
     visibility: hidden;
+    overflow:auto;
     
     &:target {
         opacity: 1;
         visibility: visible;
     }
+
+    
 
     &__content {
         width: 75%;
@@ -20,24 +23,44 @@
         box-shadow: $box-shadow-small;
         border-radius: 3px;
         display:table;
-        overflow:hidden;
+        overflow:auto;
 
         @include absCenter;
+
+        @include responsiveQ(phone) {
+            height: 75%;
+        }
+        
     }
 
     &__left {
         width:40%;
         display:table-cell;
+
+        @include responsiveQ(phone) {
+            width:100%;
+            display:inline-block;
+        }
     }
     &__right {
         width:60.00%;
         display:table-cell;
         vertical-align: middle;
         padding:2rem 4rem;
+
+        @include responsiveQ(phone) {
+            width:100%;
+            display:inline-block;
+        }
     }
     &__img {
         display: block;
         width:100%;
+
+        @include responsiveQ(phone) {
+            width:50%;
+            display:none;
+        }
     }
     &__text {
         font-size: 1.4rem;
@@ -50,8 +73,15 @@
         column-count: 2;
         column-gap: 4rem;
         column-rule: 1px solid $color-grey-dark;
-
+        overflow: scroll;
         hyphens: auto;
+
+        @include responsiveQ(tab-port) {
+           overflow: scroll;
+           -moz-column-count: 1;
+           column-count: 1;
+           text-align: left;
+        }
     }
 
     &__close {
@@ -59,11 +89,12 @@
         &:visited {
             color: $color-grey-dark;
             position: absolute;
-            right: 2rem;
-            top: 2rem;
+            right: 2.5rem;
+            top: 2.5rem;
             font-size:3rem;
             text-decoration: none;
             display: inline-block;
+            line-height: 1px;
         }
 
         &:hover {

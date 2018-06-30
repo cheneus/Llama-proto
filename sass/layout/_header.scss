@@ -1,5 +1,5 @@
 .header {
-    height: 120vh;
+    height: 100vh;
     background-image: linear-gradient( to right bottom, 
       rgba($banner-color-tertiary, 0.8)0%, 
       rgba($banner-color-primary, 0.8)50%, rgba($banner-color-secondary, 0.8)100%),
@@ -7,12 +7,12 @@
     background-size: cover;
     background-position: top;
     /* clippy path maker */
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 
     @include responsiveQ(phone) {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 115vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 115vh, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }
 
     &__logo-box {

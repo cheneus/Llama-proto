@@ -3,12 +3,19 @@
     margin-top: -20vh;
     margin-bottom: -5vh;
 
+    @include responsiveQ(tab-land) {
+        padding: 30rem 2rem;
+        margin-top: -16vh;
+        margin-bottom: -5vh;
+    }
+
     @include responsiveQ(tab-port) {
-        padding:20rem 2rem;
+        padding:25rem 2rem;
         margin-bottom: 5vh;
        }
 
     @include responsiveQ(phone) {
+        padding:20rem 2rem;
         margin-bottom: 3.5vh;
     }
 }
